@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Bento | Portfólio Front-End & Back-End</title>
+  <meta name="description" content="Portfólio de Gabriel Bento, estudante de TI atuando no desenvolvimento Front-end e expandindo conhecimentos em Back-end.">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="topbar shell">
+    <a class="brand" href="#hero">Portfolio</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#projects">Projetos</a>
+      <a href="#about">Sobre</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell panel panel-hero" id="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Estudante de TI · Front-End & Back-End</p>
+        <h1>
+          Gabriel Bento
+          <span>estudante de TI atuando no desenvolvimento Front-end e expandindo conhecimentos em Back-end para construção de aplicações completas.</span>
+        </h1>
+        <p class="hero-text" id="hero-description"></p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Ver projetos</a>
+          <a class="button button-ghost" href="#contact">Falar comigo</a>
+        </div>
+
+        <ul class="hero-highlights" id="hero-highlights"></ul>
+      </div>
+    </section>
+
+    <section class="ticker-wrap panel panel-ticker">
+      <div class="ticker" id="ticker-track"></div>
+    </section>
+
+    <section class="shell section panel panel-light projects-section" id="projects">
+      <div class="projects-heading reveal">
+        <p class="eyebrow">Seleção</p>
+        <h2 class="projects-title">PROJETOS</h2>
+        <p class="projects-intro">Uma curadoria visual com presença editorial, contraste forte e apresentação elegante para cada trabalho.</p>
+      </div>
+
+      <div class="projects-marquee reveal-delay" id="projects-marquee">
+        <div class="projects-track" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <section class="shell section about-grid panel panel-dark" id="about">
+      <article class="about-card reveal">
+        <p class="eyebrow">Sobre mim</p>
+        <h2>Estudante de TI Front & Back-End.</h2>
+        <p id="about-text"></p>
+      </article>
+    </section>
+
+    <section class="shell section panel panel-paper" id="stack">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Ferramentas</p>
+        <h2>Stack e habilidades</h2>
+      </div>
+
+      <div class="stack-grid" id="stack-grid"></div>
+    </section>
+
+    <section class="shell section contact-section panel panel-accent" id="contact">
+      <div class="contact-showcase reveal">
+        <p class="eyebrow contact-eyebrow">Vamos conversar</p>
+        <h2 class="contact-title"><span class="contact-title-top">Tem&nbsp;um&nbsp;projeto</span><span>em mente?</span></h2>
+        <p class="contact-lead" id="contact-text"></p>
+        <a class="contact-cta" id="contact-cta" href="#">Entrar em contato <span aria-hidden="true">↗</span></a>
+        <p class="contact-note">Este botão abrirá uma conversa comigo no WhatsApp.</p>
+      </div>
+
+      <div class="contact-links-grid reveal-delay" id="contact-links"></div>
+    </section>
+  </main>
+
+  <footer class="shell footer">
+    <p>© 2026 Gabriel Bento. Todos os direitos reservados.</p>
+    <p>Feito com React + Tailwind CSS</p>
+  </footer>
+
+  <script src="./src/data/portfolioData.js"></script>
+  <script src="./src/main.js"></script>
+</body>
+</html>
